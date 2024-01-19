@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>zaza.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="8.jpg" />
+    <None Remove="8bg.png" />
+    <None Remove="desert.jpg" />
+    <None Remove="desert.png" />
+    <None Remove="disclo.png" />
+    <None Remove="ic_home_white_48dp.png" />
+    <None Remove="image-removebg-preview_1.png" />
+    <None Remove="Settings Graphic.PNG" />
+    <None Remove="Untitled_3-removebg-preview.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="zaza.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WPF-UI" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="8.jpg" />
+    <Resource Include="8bg.png" />
+    <Resource Include="desert.jpg" />
+    <Resource Include="desert.png" />
+    <Resource Include="disclo.png" />
+    <Resource Include="ic_home_white_48dp.png" />
+    <Resource Include="image-removebg-preview_1.png" />
+    <Resource Include="Settings Graphic.PNG" />
+    <Resource Include="Untitled_3-removebg-preview.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+
+</Project>

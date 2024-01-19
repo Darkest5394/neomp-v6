@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slurp", "Slurp.csproj", "{4BEE6464-FE53-4197-AD4E-92F1980D6E2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BEE6464-FE53-4197-AD4E-92F1980D6E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BEE6464-FE53-4197-AD4E-92F1980D6E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BEE6464-FE53-4197-AD4E-92F1980D6E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BEE6464-FE53-4197-AD4E-92F1980D6E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D5CFA3A-5C25-44C1-B06A-67A46B0BAC5D}
+	EndGlobalSection
+EndGlobal

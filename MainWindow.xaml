@@ -1,0 +1,103 @@
+﻿<Window x:Class="ZFN.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZFN"
+        mc:Ignorable="d"
+        Title="Slurp Launcher" Height="450" Width="774"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml" ResizeMode="CanMinimize" WindowStyle="None" Background="#FFFF7500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Margin="-68,-52,-145,-60">
+            <Grid.Effect>
+                <BlurEffect Radius="20"/>
+            </Grid.Effect>
+            <Grid.Background>
+                <ImageBrush ImageSource="/desert.png" Stretch="UniformToFill"/>
+            </Grid.Background>
+        </Grid>
+        <Grid Margin="-68,-44,-145,-52" Background="#4C000000">
+            <Grid.Effect>
+                <BlurEffect Radius="20"/>
+            </Grid.Effect>
+        </Grid>
+
+        <ui:TitleBar Margin="0,0,0,399" Foreground="#E4FFFFFF" ButtonsForeground="#E4FFFFFF"/>
+        <Grid x:Name="Home" Margin="60,0,-60,0">
+            <Border CornerRadius="5" Margin="28,314,450,90" Background="#7FFFFFFF" MouseUp="Border_MouseUp">
+                <Label Foreground="#BF000000" Content="Launch" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+
+                </Label>
+            </Border>
+
+            <Label Margin="-38,68,504,296" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="NeoMP" FontSize="50" FontWeight="Bold" FontFamily="Microsoft JhengHei">
+
+            </Label>
+            <Label Margin="-38,23,514,339" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Welcome to" FontSize="20" FontFamily="Microsoft JhengHei UI Light"/>
+            <Label Margin="28,132,326,230" Foreground="White" VerticalContentAlignment="Center" Content="Welcome to NeoMP." FontSize="17" FontFamily="Microsoft JhengHei UI Light"/>
+            <Label Margin="28,154,326,208" Foreground="White" VerticalContentAlignment="Center" Content="Dont forget to join our discord server for news!" FontSize="17" FontFamily="Microsoft JhengHei UI Light"/>
+            <Label Margin="28,260,325,136" Foreground="White" VerticalContentAlignment="Center" Content="Login and play now!" FontSize="30" FontFamily="Calibri"/>
+            <Label Margin="28,170,326,179" Foreground="White" VerticalContentAlignment="Center" Content="https://discord.gg/neomp" FontSize="17" FontFamily="Microsoft JhengHei UI Light"/>
+            <Border CornerRadius="5" Margin="28,365,450,52" Background="#66FFFFFF" MouseUp="Border_MouseUp_1">
+                <Label Foreground="#BF000000" Content="Click here to login" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+
+                </Label>
+            </Border>
+        </Grid>
+        <Grid Margin="0,0,719,0" Background="#0CFFFFFF">
+            <Button Opacity="0.5" Height="48" Width="22" Margin="15,392,0,0" VerticalAlignment="Top" Foreground="#00000000" BorderBrush="#00000000" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Settings Graphic.PNG" Stretch="Uniform"/>
+                </Button.Background>
+
+            </Button>
+            <Button Opacity="0.5" Height="48" Width="29" Margin="0,344,0,0" VerticalAlignment="Top" Foreground="#00000000" BorderBrush="#00000000" HorizontalAlignment="Center">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ic_home_white_48dp.png" Stretch="Uniform"/>
+                </Button.Background>
+
+            </Button>
+            <Button Opacity="0.5" Height="48" Width="26" Margin="0,296,0,0" VerticalAlignment="Top" Foreground="#00000000" BorderBrush="#00000000" HorizontalAlignment="Center">
+                <Button.Background>
+                    <ImageBrush ImageSource="/disclo.png" Stretch="Uniform"/>
+                </Button.Background>
+
+            </Button>
+        </Grid>
+        <Grid x:Name="Settings" Margin="-1041,0,1041,0">
+
+            <TextBox x:Name="Username" Margin="48,139,433,0" Background="#7FFFFFFF" VerticalAlignment="Top"/>
+            <Label Margin="-68,20,544,342" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Settings" FontSize="20" FontFamily="Microsoft JhengHei UI Light"/>
+            <Label Margin="-127,72,485,305" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Login" FontSize="30" FontFamily="Corbel"/>
+            <TextBox x:Name="Password" Margin="48,179,433,0" Background="#7FFFFFFF" VerticalAlignment="Top"/>
+            <Label Margin="-104,225,461,157" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Directory" FontSize="30" FontFamily="Corbel"/>
+            <TextBox x:Name="DirectoryT" Margin="48,293,433,0" Background="#7FFFFFFF" VerticalAlignment="Top" Text="Example: 'C:/Fortnite/10.40/'"/>
+        </Grid>
+        <Grid Margin="0,0,719,0" Background="#0CFFFFFF">
+            <Button Opacity="0.5" Height="48" Width="22" Margin="15,392,0,0" VerticalAlignment="Top" Foreground="#00000000" BorderBrush="#00000000" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Settings Graphic.PNG" Stretch="Uniform"/>
+                </Button.Background>
+
+            </Button>
+            <Button Opacity="0.5" Height="48" Width="29" Margin="0,344,0,0" VerticalAlignment="Top" Foreground="#00000000" BorderBrush="#00000000" HorizontalAlignment="Center" Click="Button_Click_1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ic_home_white_48dp.png" Stretch="Uniform"/>
+                </Button.Background>
+
+            </Button>
+            <Button Opacity="0.5" Height="48" Width="54" Margin="-192,-100,0,0" VerticalAlignment="Top" Foreground="#00000000" BorderBrush="#00000000">
+                <Button.Background>
+                    <ImageBrush ImageSource="/image-removebg-preview_1.png" Stretch="Uniform"/>
+                </Button.Background>
+
+            </Button>
+            <Button Opacity="0.5" Height="48" Width="26" Margin="0,296,0,0" VerticalAlignment="Top" Foreground="#00000000" BorderBrush="#00000000" HorizontalAlignment="Center" Click="Button_Click_2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/disclo.png" Stretch="Uniform"/>
+                </Button.Background>
+
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
